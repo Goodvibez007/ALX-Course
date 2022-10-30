@@ -1,4 +1,6 @@
-﻿namespace ALX_Course.Lessons.Classes
+﻿using System;
+
+namespace ALX_Course.Lessons.Classes
 {
     public class Dog
     {
