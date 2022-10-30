@@ -1,11 +1,11 @@
-﻿using ALX_Course.Lessons.Classes;
+﻿using ALX_Course.Lessons.L1.Classes;
 using System;
 
-namespace ALX_Course.Lessons
+namespace ALX_Course.Lessons.L1
 {
     public class L1ObjectVariables
     {
-        public static void Test1()
+        public static void Run1()
         {
             Console.WriteLine("Variables");
             Dog dog1 = new Dog();
@@ -21,7 +21,7 @@ namespace ALX_Course.Lessons
             Dog.Eat();
         }
 
-        public static void Test2()
+        public static void Run2()
         {
             Dog dogAzor = new Dog();
             dogAzor.Race = "Labrador";

@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace ALX_Course.Lessons
+namespace ALX_Course.Lessons.L1
 {
     public class L1Strings
     {
-        public static void Test()
+        public static void Run()
         {
             string name = "Mateusz";
             Console.WriteLine(name);
@@ -12,7 +12,7 @@ namespace ALX_Course.Lessons
             Console.WriteLine(name);
             name = name + " ma kota";
             Console.WriteLine(name);
-            
+
             ExpandString(name, "hello, ");
             Console.WriteLine(name);
 

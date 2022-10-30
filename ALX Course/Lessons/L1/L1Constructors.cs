@@ -1,15 +1,15 @@
-﻿using ALX_Course.Lessons.Classes;
+﻿using ALX_Course.Lessons.L1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALX_Course.Lessons
+namespace ALX_Course.Lessons.L1
 {
     public class L1Constructors
     {
-        public static void Test()
+        public static void Run()
         {
             var spider = new Spider();
             spider.Color = "black";

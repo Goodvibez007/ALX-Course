@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALX_Course.Lessons
+namespace ALX_Course.Lessons.L1
 {
     public class L1SimpleVariables
     {
-        public static void Test()
+        public static void Run()
         {
             bool whySoSerious = true;
             Console.WriteLine(whySoSerious);
