@@ -40,10 +40,13 @@ namespace ALXCourseHomework.MailingService
             email5.Subject = "Hallo";
             email5.Message = "Hallo. Wie gehts?";
 
-            //Email.SendEmail(email1);
+            var emailService = new EmailService();
 
-
+            emailService.SendEmail(email1);
+            emailService.SendEmail(email2);
+            emailService.SendEmail(email3);
+            emailService.SendEmail(email4);
+            emailService.SendEmail(email5);
         }
-
     }
 }

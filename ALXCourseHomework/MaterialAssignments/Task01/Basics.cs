@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXCourseHomework.MaterialAssignments
+namespace ALXCourseHomework.MaterialAssignments.Task01
 {
     public class Basics
     {
@@ -16,9 +16,8 @@ namespace ALXCourseHomework.MaterialAssignments
         public double Weight;
         public string Sex;
 
-        public void Present1()
+        public void Introduce1()
         {
-            Console.WriteLine("--------------------------");
             Console.WriteLine("Name:    \t" + Name);
             Console.WriteLine("Surname: \t" + Surname);
             Console.WriteLine($"Age:    \t{Age} years");
@@ -27,11 +26,10 @@ namespace ALXCourseHomework.MaterialAssignments
             Console.WriteLine("Sex:     \t" + Sex);
         }
 
-        public void Present2()
+        public void Introduce2()
         {
-            double cmHeight = Height*100;
+            double cmHeight = Height * 100;
 
-            Console.WriteLine("--------------------------");
             Console.WriteLine("Name:    \t" + Name);
             Console.WriteLine("Surname: \t" + Surname);
             Console.WriteLine($"Age:    \t{Age} years");

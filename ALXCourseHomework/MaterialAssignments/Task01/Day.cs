@@ -4,8 +4,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ALXCourseHomework.MaterialAssignments.Enums;
 
-namespace ALXCourseHomework.MaterialAssignments.Enums
+namespace ALXCourseHomework.MaterialAssignments.Task01
 {
     public class Day
     {

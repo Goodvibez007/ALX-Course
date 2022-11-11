@@ -5,12 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXCourseHomework.MaterialAssignments
+namespace ALXCourseHomework.MaterialAssignments.Task01
 {
-    public class MaterialAssignmentsTest
+    public class MaterialAssignmentsTest01
     {
         public static void Run()
         {
+            Console.WriteLine("----------------------------");
+            Console.WriteLine("Material Assignment - Task 1");
+            Console.WriteLine("----------------------------");
+
             var person = new Basics();
             person.Name = "Michal";
             person.Surname = "Nycz";
@@ -19,10 +23,10 @@ namespace ALXCourseHomework.MaterialAssignments
             person.Weight = 93;
             person.Sex = "Male";
 
-            person.Present1();
-            person.Present2();
-            
-            Console.WriteLine("--------------------------");
+            person.Introduce1();
+            Console.WriteLine("----------------------------");
+            person.Introduce2();
+            Console.WriteLine("----------------------------");
 
 
             var day = new Day(12, Months.NOVEMBER, WeekDays.SATURDAY, 2022);
