@@ -37,6 +37,5 @@ namespace ALXCourseHomework.MaterialAssignments.Task01
             Console.WriteLine($"Weight: \t{Weight} kg");
             Console.WriteLine("Sex:     \t" + Sex);
         }
-
     }
 }

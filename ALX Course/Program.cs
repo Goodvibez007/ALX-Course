@@ -1,4 +1,5 @@
 ﻿using ALX_Course.Assignments;
+using ALX_Course.Assignments.M2;
 using ALX_Course.Lessons;
 using ALX_Course.Lessons.L2;
 using System;
@@ -14,4 +15,5 @@ Console.WriteLine("----------------------");
 //L1Constructors.Run();
 //AssignmentsDemo.Run();
 //L2Conditionals.Run();
-L2EnumsAndSwitch.Run();
+//L2EnumsAndSwitch.Run();
+SeniorityServiceTest.Run();

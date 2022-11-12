@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALX_Course.Assignments
+namespace ALX_Course.Assignments.M1
 {
     public class AssignmentsDemo
     {
