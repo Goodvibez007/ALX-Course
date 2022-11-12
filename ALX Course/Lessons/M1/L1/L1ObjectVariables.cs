@@ -1,7 +1,7 @@
-﻿using ALX_Course.Lessons.L1.Classes;
+﻿using ALX_Course.Lessons.M1.L1.Classes;
 using System;
 
-namespace ALX_Course.Lessons.L1
+namespace ALX_Course.Lessons.M1.L1
 {
     public class L1ObjectVariables
     {

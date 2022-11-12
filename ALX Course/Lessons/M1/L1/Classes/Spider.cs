@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALX_Course.Lessons.L1.Classes
+namespace ALX_Course.Lessons.M1.L1.Classes
 {
     public class Spider
     {

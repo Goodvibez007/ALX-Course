@@ -26,15 +26,16 @@ namespace ALX_Course.Assignments.M2
             seniorityService.ClassifySeniorityBySalary(employee5);
 
             Console.WriteLine("Employees classified by Salary:");
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("----------------------");
             Console.WriteLine("Juniors: ");
             PresentEmployees(seniorityService.JuniorEmployees);
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("----------------------");
             Console.WriteLine("Mids: ");
             PresentEmployees(seniorityService.MidEmployees);
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("----------------------");
             Console.WriteLine("Seniors: ");
             PresentEmployees(seniorityService.SeniorEmployees);
+            Console.WriteLine("----------------------");
 
             seniorityService.ClearLists();
 
@@ -44,17 +45,17 @@ namespace ALX_Course.Assignments.M2
             seniorityService.ClassifySeniorityByExperience(employee4);
             seniorityService.ClassifySeniorityByExperience(employee5);
 
-            Console.WriteLine("-----------------------------");
             Console.WriteLine("Employees classified by Experience:");
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("----------------------");
             Console.WriteLine("Juniors: ");
             PresentEmployees(seniorityService.JuniorEmployees);
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("----------------------");
             Console.WriteLine("Mids: ");
             PresentEmployees(seniorityService.MidEmployees);
-            Console.WriteLine("-----------------------------");
+            Console.WriteLine("----------------------");
             Console.WriteLine("Seniors: ");
             PresentEmployees(seniorityService.SeniorEmployees);
+            Console.WriteLine("----------------------");
         }
 
         public static void PresentEmployees(List<Employee> employees)

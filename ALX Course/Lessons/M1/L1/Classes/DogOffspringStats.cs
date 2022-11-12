@@ -1,4 +1,4 @@
-﻿namespace ALX_Course.Lessons.L1.Classes
+﻿namespace ALX_Course.Lessons.M1.L1.Classes
 {
     public class DogOffspringStats
     {
