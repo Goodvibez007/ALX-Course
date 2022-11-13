@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALX_Course.Assignments.M2
+namespace ALX_Course.Assignments.M2.L1
 {
     public class Employee
     {

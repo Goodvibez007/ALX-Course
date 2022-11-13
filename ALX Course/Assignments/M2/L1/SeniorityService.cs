@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALX_Course.Assignments.M2
+namespace ALX_Course.Assignments.M2.L1
 {
     public class SeniorityService
     {
@@ -25,7 +25,7 @@ namespace ALX_Course.Assignments.M2
             {
                 JuniorEmployees.Add(employee);
             }
-            else if ((employee.Salary >= 4000) & (employee.Salary < 8000))
+            else if (employee.Salary >= 4000 & employee.Salary < 8000)
             {
                 MidEmployees.Add(employee);
             }
@@ -41,7 +41,7 @@ namespace ALX_Course.Assignments.M2
             {
                 JuniorEmployees.Add(employee);
             }
-            else if ((employee.Experience >= 2) & (employee.Experience < 4))
+            else if (employee.Experience >= 2 & employee.Experience < 4)
             {
                 MidEmployees.Add(employee);
             }

@@ -8,12 +8,12 @@ namespace ALX_Course.Lessons.M1.L2.Enums
 {
     public class ChessFigures
     {
-        public ChessFigureTypes FigureTypes;
+        public ChessFigureType FigureTypes;
         public ChessColor FigureColor;
 
         public ChessFigures() { }
 
-        public ChessFigures(ChessFigureTypes chessFigureTypes, ChessColor chessColor)
+        public ChessFigures(ChessFigureType chessFigureTypes, ChessColor chessColor)
         {
             FigureTypes = chessFigureTypes;
             FigureColor = chessColor;

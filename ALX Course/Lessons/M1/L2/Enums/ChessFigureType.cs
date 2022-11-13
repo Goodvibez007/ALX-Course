@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ALX_Course.Lessons.M1.L2.Enums
 {
-    public enum ChessFigureTypes
+    public enum ChessFigureType
     {
         PAWN,
         BISHOP,

@@ -1,9 +1,11 @@
-﻿using ALX_Course.Assignments.M1;
+﻿using AFALXCourse.Lessons.M2.L2;
+using ALX_Course.Assignments.M1;
 using ALX_Course.Assignments.M2;
 using ALX_Course.Lessons;
 using ALX_Course.Lessons.M1.L1;
 using ALX_Course.Lessons.M1.L2;
 using ALX_Course.Lessons.M2.L1;
+using ALX_Course.Lessons.M2.L2;
 using System;
 
 Console.Write("Michal Nycz\n");
@@ -25,4 +27,8 @@ Console.WriteLine("----------------------");
 //L1Loops.RunForeach();
 //L1Loops.RunFor();
 //L1Loops.RunWhile2();
-L1Dictionaries.Run1();
+//L1Dictionaries.Run1();
+//L2GettersAndSetters.Run();
+//L2Encapsulation.Run();
+//L2Interfaces.Run();
+L2Inheritance.Run();

@@ -11,19 +11,19 @@ namespace ALX_Course.Lessons.M1.L2
     {
         public static void Run()
         {
-            var whiteQueen = new ChessFigures(ChessFigureTypes.QUEEN, ChessColor.WHITE);
+            var whiteQueen = new ChessFigures(ChessFigureType.QUEEN, ChessColor.WHITE);
 
             var blackQueen = new ChessFigures();
-            blackQueen.FigureTypes = ChessFigureTypes.QUEEN;
+            blackQueen.FigureTypes = ChessFigureType.QUEEN;
             blackQueen.FigureColor = ChessColor.BLACK;
 
             var whiteKing = new ChessFigures
             {
-                FigureTypes = ChessFigureTypes.KING,
+                FigureTypes = ChessFigureType.KING,
                 FigureColor = ChessColor.WHITE,
             };
 
-            var blackBishop = new ChessFigures(ChessFigureTypes.BISHOP, ChessColor.BLACK);
+            var blackBishop = new ChessFigures(ChessFigureType.BISHOP, ChessColor.BLACK);
 
             GetFigureTypes(whiteQueen);
             GetFigureTypes(blackQueen);
@@ -35,22 +35,22 @@ namespace ALX_Course.Lessons.M1.L2
         {
             switch(chessFigures.FigureTypes)
             {
-                case ChessFigureTypes.QUEEN:
+                case ChessFigureType.QUEEN:
                     Console.WriteLine("The figure is a queen");
                     break;
-                case ChessFigureTypes.KING:
+                case ChessFigureType.KING:
                     Console.WriteLine("The figure is a king");
                     break;
-                case ChessFigureTypes.ROOK:
+                case ChessFigureType.ROOK:
                     Console.WriteLine("The figure is a rook");
                     break;
-                case ChessFigureTypes.BISHOP:
+                case ChessFigureType.BISHOP:
                     Console.WriteLine("The figure is a bishop");
                     break;
-                case ChessFigureTypes.KNIGHT:
+                case ChessFigureType.KNIGHT:
                     Console.WriteLine("The figure is a knight");
                     break;
-                case ChessFigureTypes.PAWN:
+                case ChessFigureType.PAWN:
                     Console.WriteLine("The figure is a pawn");
                     break;
                 default:
