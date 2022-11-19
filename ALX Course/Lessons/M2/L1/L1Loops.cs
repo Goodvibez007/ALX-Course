@@ -43,7 +43,7 @@ namespace ALX_Course.Lessons.M2.L1
 
         public static void RunWhile()
         {
-            char c = 'q';
+            char c = 'n';
             while(c != 'n')
             {
                 Console.WriteLine(" still in the loop!");
@@ -52,7 +52,7 @@ namespace ALX_Course.Lessons.M2.L1
             }
             Console.WriteLine("Outside the loop.");
 
-            string numberFromKeyboard = "0";
+            /*string numberFromKeyboard = "0";
             while (Int32.Parse(numberFromKeyboard) < 100000)
             {
                 Console.WriteLine(" still in the loop!");
@@ -60,7 +60,7 @@ namespace ALX_Course.Lessons.M2.L1
                 numberFromKeyboard = Console.ReadLine();
                 Console.WriteLine();
             }
-            Console.WriteLine("Outside the loop.");
+            Console.WriteLine("Outside the loop.");*/
         }
 
         public static void RunDoWhile()
