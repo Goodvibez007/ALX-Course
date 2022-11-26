@@ -1,9 +1,4 @@
 ﻿using ShootingRange;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ALXCourseHomework.ShootingRange
 {
@@ -17,7 +12,7 @@ namespace ALXCourseHomework.ShootingRange
 
             shootingRangeServices.EntryMenu(customer, settings);
            
-            Console.WriteLine();
+            Console.WriteLine();            
         }
     }
 }

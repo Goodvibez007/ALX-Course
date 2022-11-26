@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShootingRange
+﻿namespace ShootingRange
 {
     public class ShootingRangeServices
     {
@@ -100,17 +94,37 @@ namespace ShootingRange
 
         public void CountNymberOfShots(Customer customer, Settings settings)
         {
-            Console.WriteLine();
-            Console.WriteLine("Selected rounds and prices:");
-            Console.WriteLine("Weapon    \tNo of shots \tPrice for 1 shot \tPrice for all shots");
+            double totalPrice = Math.Round(customer.HandgunShots * settings.HandgunPrice + customer.PistolShots * settings.PistolPrice + customer.RevolverShots * settings.RevolverPrice + customer.RifleShots * settings.RiflePrice + customer.ShotgunShots * settings.ShotgunPrice, 2);
+            double tax = 0.23;
+            double priceToPay = Math.Round(totalPrice + totalPrice * tax, 2);
 
-            Console.WriteLine($"Handgun  \t{customer.HandgunShots} \t\t{settings.HandgunPrice} \t\t\t{customer.HandgunShots * settings.HandgunPrice}");
-            Console.WriteLine($"Pistol   \t{customer.PistolShots} \t\t{settings.PistolPrice} \t\t\t{customer.PistolShots * settings.PistolPrice}");
-            Console.WriteLine($"Revolver \t{customer.RevolverShots} \t\t{settings.RevolverPrice} \t\t\t{customer.RevolverShots * settings.RevolverPrice}");
-            Console.WriteLine($"Rifle    \t{customer.RifleShots} \t\t{settings.RiflePrice} \t\t\t{customer.RifleShots * settings.RiflePrice}");
-            Console.WriteLine($"Shotgun  \t{customer.ShotgunShots} \t\t{settings.ShotgunPrice} \t\t\t{customer.ShotgunShots * settings.ShotgunPrice}");
+            /*Console.WriteLine("Selected rounds and prices:");
+            Console.WriteLine("Weapon    \t\tNo of shots \t\tPrice for 1 shot \t\tPrice for all shots");
+
+            Console.WriteLine($"Handgun  \t\t{customer.HandgunShots} \t\t\t{settings.HandgunPrice} zł\t\t\t\t{customer.HandgunShots * settings.HandgunPrice} zł");
+            Console.WriteLine($"Pistol   \t\t{customer.PistolShots} \t\t\t{settings.PistolPrice} zł\t\t\t\t{customer.PistolShots * settings.PistolPrice} zł");
+            Console.WriteLine($"Revolver \t\t{customer.RevolverShots} \t\t\t{settings.RevolverPrice} zł\t\t\t\t{customer.RevolverShots * settings.RevolverPrice} zł");
+            Console.WriteLine($"Rifle    \t\t{customer.RifleShots} \t\t\t{settings.RiflePrice} zł\t\t\t\t{customer.RifleShots * settings.RiflePrice} zł");
+            Console.WriteLine($"Shotgun  \t\t{customer.ShotgunShots} \t\t\t{settings.ShotgunPrice} zł\t\t\t\t{customer.ShotgunShots * settings.ShotgunPrice} zł");
             Console.WriteLine();
-            Console.WriteLine($"Total price: {customer.HandgunShots * settings.HandgunPrice + customer.PistolShots * settings.PistolPrice + customer.RevolverShots * settings.RevolverPrice + customer.RifleShots * settings.RiflePrice + customer.ShotgunShots * settings.ShotgunPrice} zł");
+            Console.WriteLine($"Total price: \t\t{totalPrice} zł");
+            Console.WriteLine($"Vat:         \t\t{tax*100} %");
+            Console.WriteLine($"Price to pay:\t\t{priceToPay} zł");*/
+
+            string recipe = "Selected rounds and prices:\n\n" +
+            "Weapon    \t\tNo of shots \t\tPrice for 1 shot \t\tPrice for all shots\n" +
+            $"Handgun  \t\t{customer.HandgunShots} \t\t\t{settings.HandgunPrice} zł\t\t\t\t{customer.HandgunShots * settings.HandgunPrice} zł\n" +
+            $"Pistol   \t\t{customer.PistolShots} \t\t\t{settings.PistolPrice} zł\t\t\t\t{customer.PistolShots * settings.PistolPrice} zł\n" +
+            $"Revolver \t\t{customer.RevolverShots} \t\t\t{settings.RevolverPrice} zł\t\t\t\t{customer.RevolverShots * settings.RevolverPrice} zł\n" +
+            $"Rifle    \t\t{customer.RifleShots} \t\t\t{settings.RiflePrice} zł\t\t\t\t{customer.RifleShots * settings.RiflePrice} zł\n" +
+            $"Shotgun  \t\t{customer.ShotgunShots} \t\t\t{settings.ShotgunPrice} zł\t\t\t\t{customer.ShotgunShots * settings.ShotgunPrice} zł\n\n" +            
+            $"Total price: \t\t{totalPrice} zł\n" +
+            $"Vat:         \t\t{tax * 100} %\n" +
+            $"Price to pay:\t\t{priceToPay} zł" + Environment.NewLine;
+
+            Console.WriteLine(recipe);
+
+            File.WriteAllText(@"..\..\..\Recipes\recipe.txt", recipe);
         }
 
         public void SetPrices(Settings settings)

@@ -1,0 +1,12 @@
+Selected rounds and prices:
+
+Weapon    		No of shots 		Price for 1 shot 		Price for all shots
+Handgun  		0 			0,8 zł				0 zł
+Pistol   		0 			0,9 zł				0 zł
+Revolver 		0 			1,2 zł				0 zł
+Rifle    		0 			0,3 zł				0 zł
+Shotgun  		0 			1,5 zł				0 zł
+
+Total price: 		0 zł
+Vat:         		23 %
+Price to pay:		0 zł
