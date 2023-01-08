@@ -152,5 +152,15 @@ namespace CalculatorForm
                 textLenght = TextRenderer.MeasureText(ExpressionBuilder.ToString(), ResultTextBox.Font);
             }
         }
+
+        private void ResultTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -56,9 +56,10 @@
             this.ResultTextBox.Location = new System.Drawing.Point(10, 54);
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.ReadOnly = true;
-            this.ResultTextBox.Size = new System.Drawing.Size(274, 42);
+            this.ResultTextBox.Size = new System.Drawing.Size(274, 43);
             this.ResultTextBox.TabIndex = 0;
             this.ResultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ResultTextBox.TextChanged += new System.EventHandler(this.ResultTextBox_TextChanged);
             // 
             // Key1Button
             // 
@@ -282,6 +283,7 @@
             this.LogBox.Size = new System.Drawing.Size(274, 43);
             this.LogBox.TabIndex = 19;
             this.LogBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.LogBox.TextChanged += new System.EventHandler(this.LogBox_TextChanged);
             // 
             // CalculatorForm
             // 
